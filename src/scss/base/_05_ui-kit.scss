@@ -1,0 +1,63 @@
+.container {
+  @include container();
+  min-width: 1200px;
+}
+
+.button {
+    @include no-btn();
+    padding: 10px;
+    text-align: center;
+    min-width: 250px;
+    background: #4A8FE0;
+    border-radius: 5px;
+    font-weight: 700;
+    font-size: 18px;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: #3775BE;
+        box-shadow: 0px 4px 10px rgba(27, 90, 163, 0.29);
+    }
+}
+
+.button-small {
+    @include no-btn();
+    padding: 6px;
+    text-align: center;
+    min-width: 140px;
+    font-weight: 500;
+    font-size: 14px;
+    border: 1px solid #1B5AA3;
+    border-radius: 5px;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus,
+    &:active {
+        background: #234D9C;
+    }
+}
+
+.input-crm {
+    border: 1px solid rgba(112, 170, 239, 0.45);
+    border-radius: 5px;
+    font-weight: 300;
+    font-size: 16px;
+    color: #2C2B2B;
+    padding: 9px 20px 10px;
+
+    &::placeholder {
+        color: rgba(44, 43, 43, 0.5);
+    }
+
+    &:focus {
+        background: rgba(240, 244, 252, 0.57);
+        border: 1px solid #70AAEF;
+    }
+
+    &.error {
+        border: 1px solid #C83138;
+    }
+}
