@@ -1,0 +1,75 @@
+.left-nav {
+    padding: 40px 20px 20px 26px;
+}
+
+.menu {
+    position: sticky;
+}
+
+.menu-link {
+    display: block;
+    padding: 20px 0 20px 40px;
+    color: #184070;
+    transition: 0.3s;
+    position: relative;
+
+    &:hover,
+    &:focus,
+    &.active {
+        font-weight: 600;
+        color: #C83138;
+    }
+
+    &::after {
+        content: "";
+        width: 26px;
+        height: 26px;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translateY(-50%);
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+}
+
+.menu-link--home::after {
+    background-image: url("../img/home.svg");
+}
+
+.menu-link--sections::after {
+    background-image: url("../img/sections.svg");
+}
+
+.menu-link--oder::after {
+    background-image: url("../img/notes.svg");
+}
+
+.menu-link--setting::after {
+    background-image: url("../img/settings.svg");
+}
+
+.menu-link--ruls::after {
+    background-image: url("../img/rules.svg");
+}
+
+.sub-menu {
+    list-style: none;
+    margin: 0;
+    padding-left: 40px;
+}
+
+.sub-menu__link {
+    display: inline-block;
+    margin-bottom: 15px;
+    color: #1672DE;
+    transition: 0.3s;
+
+    &:hover,
+    &:focus,
+    &.active {
+        font-weight: 500;
+        text-decoration: underline;
+    }
+}
