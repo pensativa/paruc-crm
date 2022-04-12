@@ -1,0 +1,87 @@
+.main-first {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    background: $gray-bg url("../img/main-bg.jpg") no-repeat center/cover;
+}
+
+.main-first__logo {
+    margin-bottom: 85px;
+}
+
+.singin {
+    width: 598px;
+    display: flex;
+    position: relative;
+    background: #FFFFFF;
+    border-radius: 20px;
+    filter: drop-shadow(0px 12px 30px rgba(13, 70, 137, 0.25));
+
+    &::before,
+    &::after {
+        content: "";
+        width: 200px;
+        height: 3px;
+        background: rgba(74, 143, 224, 0.6);
+        position: absolute;
+    }
+
+    &::before {
+        left: 0;
+        top: -30px
+    }
+
+    &::after {
+        right: 0;
+        bottom: -30px
+    }
+}
+
+.singin__left {
+    padding: 40px;
+
+    & .input-crm {
+        margin-bottom: 12px;
+    }
+
+    & .button-small {
+        display: block;
+        margin: 55px auto 0;
+    }
+}
+
+.singin__left-title {
+    font-weight: 500;
+    font-size: 16px;
+    text-transform: uppercase;
+    margin-bottom: 35px;
+}
+
+.singin__label {
+    color: #4F597C;
+    margin-bottom: 7px;
+}
+
+.show-password {
+    @include no-btn("block");
+    width: 20px;
+    height: 20px;
+    margin: -42px 20px 0 auto;
+    position: relative;
+    z-index: 2;
+    background: url("../img/eye-slashed.svg") no-repeat center;
+}
+
+.show-password.open {
+    background-image: url("../img/eye.svg");
+}
+
+.singin__right {
+    padding: 18px 10px;
+    flex: 1 1 161px;
+    border-radius: 0px 20px 20px 0px;
+    background: #0D4689 url("../img/dots-bg.svg") no-repeat bottom center;
+}

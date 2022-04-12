@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 @@include('components/page-blocks/_head.html',{
-"lang":"en",
-"title":"Панель управления",
+"lang":"uk",
+"title":"Панель управления | Ломбард Парус",
 "description":"",
 "keywords":"",
 "favicon":"img/favicons/favicon",
@@ -9,8 +9,22 @@
 
 <body>
 	@@include('components/page-blocks/_head.html')
-	<main class="main">
-		
+	<main class="main main-first">
+		<img src="img/logo.svg" alt="Ломбард Парус" width="299" height="111" class="main-first__logo">
+		<div class="singin">
+			<div class="singin__left">
+				<h1 class="singin__left-title">Вхід в особистий кабінет </h1>
+				<label for="singin-login" class="singin__label">Логін</label>
+				<input id="singin-login" type="text" class="input-crm" placeholder="bond@gmail.com">
+				<label for="singin-password" class="singin__label">Пароль</label>
+				<input id="singin-password" type="password" class="input-crm" placeholder="**********">
+				<button type="button" class="show-password" data-bs-toggle="tooltip" data-bs-placement="top" title="Показать пароль"></button>
+				<button class="button-small">Увійти</button>
+			</div>
+			<div class="singin__right">
+				<img src="img/logo-w.svg" alt="Ломбард Парус" width="79" height="29" class="singin__right-logo">
+			</div>
+		</div>
 	</main>
 	@@include('components/page-blocks/_scripts.html')
 </body>

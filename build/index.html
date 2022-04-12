@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="uk">
 
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"
-				content="width=device-width, initial-scale=1.0">
+				content="width=1200, initial-scale=0, maximum-scale=5.0, user-scalable=1">
 	<meta name="description"
 				content="">
 	<meta name="keywords"
@@ -22,7 +22,7 @@
 				href="css/libs.min.css">
 	<link rel="stylesheet"
 				href="css/style.min.css">
-	<title>Панель управления</title>
+	<title>Панель управления | Ломбард Парус</title>
 </head>
 
 
@@ -32,7 +32,7 @@
 <head>
 	<meta charset="UTF-8">
 	<meta name="viewport"
-				content="width=device-width, initial-scale=1.0">
+				content="width=1200, initial-scale=0, maximum-scale=5.0, user-scalable=1">
 	<meta name="description"
 				content="@@description">
 	<meta name="keywords"
@@ -53,10 +53,25 @@
 	<title>@@title</title>
 </head>
 
-	<main class="main">
-		
+	<main class="main main-first">
+		<img src="img/logo.svg" alt="Ломбард Парус" width="299" height="111" class="main-first__logo">
+		<div class="singin">
+			<div class="singin__left">
+				<h1 class="singin__left-title">Вхід в особистий кабінет </h1>
+				<label for="singin-login" class="singin__label">Логін</label>
+				<input id="singin-login" type="text" class="input-crm" placeholder="bond@gmail.com">
+				<label for="singin-password" class="singin__label">Пароль</label>
+				<input id="singin-password" type="password" class="input-crm" placeholder="**********">
+				<button type="button" class="show-password" data-bs-toggle="tooltip" data-bs-placement="top" title="Показать пароль"></button>
+				<button class="button-small">Увійти</button>
+			</div>
+			<div class="singin__right">
+				<img src="img/logo-w.svg" alt="Ломбард Парус" width="79" height="29" class="singin__right-logo">
+			</div>
+		</div>
 	</main>
-	<script src="js/bootstrap.min.js"></script>
+	<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
 <script src="js/main.min.js"></script>
 
 </body>
