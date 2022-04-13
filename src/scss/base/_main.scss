@@ -1,3 +1,58 @@
+.main {
+    padding: 44px 35px;
+}
+
+.main__title {
+    font-weight: 500;
+    font-size: 24px;
+    color: #184070;
+    margin-bottom: 20px;
+}
+
+.setting {
+    background: #FFFFFF;
+    width: 1063px;
+    max-width: 100%;
+    border: 1px solid rgba(140, 190, 250, 0.35);
+    border-radius: 5px;
+    padding: 20px 40px;
+}
+
+.setting__item {
+
+    &:not(:first-of-type) {
+        padding-top: 20px;
+    }
+
+    &:not(:last-of-type) {
+        border-bottom: 1px solid rgba(196, 196, 196, 0.25);
+        padding-bottom: 20px;
+    }
+
+    & .input-crm {
+        width: 461px;
+    }
+}
+
+.setting__label {
+    color: #7E7E7E;
+    min-width: 200px;
+}
+
+.setting__btns {
+    width: 1063px;
+    max-width: 100%;
+    text-align: right;
+    margin-top: 44px;
+
+    & .btn {
+        font-weight: 500;
+        font-size: 18px;
+        color: #226BC0;
+        margin-right: 60px;
+    }
+}
+
 .ruls-text {
     font-weight: 500;
     font-size: 24px;

@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=1200, initial-scale=0, maximum-scale=5.0, user-scalable=1">
+	<meta name="description"
+				content="">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Панель управления</title>
+</head>
+
+
+<body class="crm">
+	<header class="header">
+    <div class="navbar">
+        <img src="img/logo.svg" alt="Ломбард Парус" width="154" height="57" class="header__logo">
+        <div class="header__search">
+            <form class="header__search-form">
+                <input class="input-crm" type="search" aria-label="Поиск">
+                <button class="btn header__search-btn" type="submit">
+                    <img src="img/search.svg" width="26" height="26" alt="Поиск">
+                </button>
+            </form>
+        </div>
+        <div class="header__exit">
+            <p class="header__exit-name">Kiev_Parus_Kovalenko</p>
+            <a href="index.html" class="header__exit-button" data-bs-toggle="tooltip" data-bs-placement="top" title="Выйти">
+                <img src="img/exit.svg" width="33" height="33" alt="Выйти">
+            </a>
+        </div>
+    </div>
+</header>
+
+	<div class="left-nav">
+    <ul class="nav menu flex-column">
+        <li class="menu-item">
+          <a class="menu-link menu-link--home @@home" aria-current="page" href="home.html">Панель управления</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link menu-link--sections @@sections">Разделы</a>
+          <ul class="sub-menu">
+              <li class="sub-menu__item">
+                  <a href="sclad.html" class="sub-menu__link @@sclad">Склады</a>
+                </li>
+              <li class="sub-menu__item">
+                  <a href="tovar.html" class="sub-menu__link @@tovar">Товары</a>
+                </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link menu-link--oder @@oder" href="oder.html">Заказы</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-link menu-link--setting active" href="settings.html">Настройки пользователя</a>
+          </li>
+        <li class="menu-item">
+            <a class="menu-link menu-link--ruls @@ruls" href="ruls.html">Правила использования личного кабинета</a>
+        </li>
+    </ul>
+</div>
+	<main class="main">
+        <h1 class="main__title">Настройки пользователя</h1>
+        <div class="setting">
+            <div class="setting__item">
+                <label for="name" class="setting__label">Имя</label>
+                <input id="name" type="text" class="input-crm" value="Kiev_Parus_Kovalenko">
+            </div>
+            <div class="setting__item">
+                <label for="email" class="setting__label">Почтовый адресс</label>
+                <input id="email" type="email" class="input-crm" value="lombardparus@gmail.com">
+            </div>
+            <div class="setting__item">
+                <label for="password" class="setting__label">Пароль</label>
+                <input id="password" type="text" class="input-crm" placeholder="Пароль">
+            </div>
+            <div class="setting__item">
+                <label for="again-password" class="setting__label">Подтвердить пароль</label>
+                <input id="again-password" type="text" class="input-crm" placeholder="Подтвердить пароль">
+            </div>
+        </div>
+        <div class="setting__btns">
+            <button class="btn">Отмена</button>
+            <button class="button">Сохранить профиль</button>
+        </div>
+		<div class="footer">
+    <a href="https://pensativa.github.io/parus/" class="footer__link" target="_blank">Ломбард “ПАРУС”</a>
+    <p class="footer__operator">&#8901;</p>
+    <p class="footer__copyrights">2022 Ломбард “ПАРУС”</p>
+</div>
+
+	</main>
+	<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

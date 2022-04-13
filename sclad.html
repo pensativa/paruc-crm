@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=1200, initial-scale=0, maximum-scale=5.0, user-scalable=1">
+	<meta name="description"
+				content="">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Панель управления</title>
+</head>
+
+
+<body class="crm">
+	<header class="header">
+    <div class="navbar">
+        <img src="img/logo.svg" alt="Ломбард Парус" width="154" height="57" class="header__logo">
+        <div class="header__search">
+            <form class="header__search-form">
+                <input class="input-crm" type="search" aria-label="Поиск">
+                <button class="btn header__search-btn" type="submit">
+                    <img src="img/search.svg" width="26" height="26" alt="Поиск">
+                </button>
+            </form>
+        </div>
+        <div class="header__exit">
+            <p class="header__exit-name">Kiev_Parus_Kovalenko</p>
+            <a href="index.html" class="header__exit-button" data-bs-toggle="tooltip" data-bs-placement="top" title="Выйти">
+                <img src="img/exit.svg" width="33" height="33" alt="Выйти">
+            </a>
+        </div>
+    </div>
+</header>
+
+	<div class="left-nav">
+    <ul class="nav menu flex-column">
+        <li class="menu-item">
+          <a class="menu-link menu-link--home @@home" aria-current="page" href="home.html">Панель управления</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link menu-link--sections active">Разделы</a>
+          <ul class="sub-menu">
+              <li class="sub-menu__item">
+                  <a href="sclad.html" class="sub-menu__link active">Склады</a>
+                </li>
+              <li class="sub-menu__item">
+                  <a href="tovar.html" class="sub-menu__link @@tovar">Товары</a>
+                </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link menu-link--oder @@oder" href="oder.html">Заказы</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-link menu-link--setting @@settings" href="settings.html">Настройки пользователя</a>
+          </li>
+        <li class="menu-item">
+            <a class="menu-link menu-link--ruls @@ruls" href="ruls.html">Правила использования личного кабинета</a>
+        </li>
+    </ul>
+</div>
+	<main class="main">
+        <h1 class="main__title">Склады</h1>
+        <div class="section__header">
+            <form class="section__header-search">
+                <input class="input-crm" type="search" aria-label="Поиск" placeholder="поиск">
+                <button class="btn header__search-btn" type="submit">
+                    <img src="img/search.svg" width="26" height="26" alt="Поиск">
+                </button>
+            </form>
+            <a href="sclad-add.html" class="button">Создать склад</a>
+        </div>
+        <div class="section__block">
+            <div class="section__block-header section__block-header--one">
+                <div class="section__block-filter dropdown">
+                    <button class="btn dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
+                        <img src="img/filter.svg" alt="Кол-во записей на странице" width="20" height="20">
+                    </button>
+                    <ul class="dropdown-menu" aria-labelledby="dropdownMenuButton1">
+                      <li><a class="dropdown-item disabled">Кол-во записей на странице</a></li>
+                      <li><a class="dropdown-item" href="#">25</a></li>
+                      <li><a class="dropdown-item" href="#">50</a></li>
+                      <li><a class="dropdown-item" href="#">100</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="section__head">
+                <div class="section__head-item name">НАЗВАНИЕ</div>
+                <div class="section__head-item city">ГОРОД</div>
+                <div class="section__head-item adres">АДРЕСС</div>
+                <div class="section__head-item view"></div>
+            </div>
+            <div class="section__block-items">
+                <div class="section__block-item name">Parus_Kovalenko</div>
+                <div class="section__block-item city"></div>
+                <div class="section__block-item adres"></div>
+                <div class="section__block-item view">
+                    <a href="sclad-view.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Смотреть">
+                        <img src="img/eye.svg" alt="Смотреть" width="20" height="20">
+                    </a>
+                </div>
+            </div>
+            <div class="section__block-footer">
+                <nav class="section__pagination">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link page-link--sec" href="#" aria-label="First page">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link page-link--sec" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&lsaquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link  active" href="#">1</a></li>
+                      <li class="page-item">
+                        <a class="page-link page-link--sec" href="#" aria-label="Next">
+                          <span aria-hidden="true">&rsaquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link page-link--sec" href="#" aria-label="Last page">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="section__counter">1 из 1</div>
+            </div>
+        </div>
+		<div class="footer">
+    <a href="https://pensativa.github.io/parus/" class="footer__link" target="_blank">Ломбард “ПАРУС”</a>
+    <p class="footer__operator">&#8901;</p>
+    <p class="footer__copyrights">2022 Ломбард “ПАРУС”</p>
+</div>
+
+	</main>
+	<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

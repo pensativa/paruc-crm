@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"Панель управления",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body class="crm">
+	@@include('components/page-blocks/_header.html')
+	@@include('components/page-blocks/_left-nav.html',{"sections":"active","sclad":"active",})
+	<main class="main">
+        <h1 class="main__title">Создать склад</h1>
+        <div class="section__view">
+            <div class="section__view-item section__add-item">
+                <div class="title">Название<span>*</span></div>
+                <input type="text" class="input-crm" placeholder="Название">
+            </div>
+            <div class="section__view-item section__add-item">
+                <div class="title">Город</div>
+                <input type="text" class="input-crm" placeholder="Город">
+            </div>
+            <div class="section__view-item section__add-item">
+                <div class="title">Адресс</div>
+                <input type="text" class="input-crm" placeholder="Адресс">
+            </div>
+        </div>
+        <div class="sclad__btns">
+            <button class="btn">Отмена</button>
+            <button class="button button--sec">Создать и продолжить</button>
+            <button class="button">Сохранить профиль</button>
+        </div>
+		@@include('components/page-blocks/_footer.html')
+	</main>
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

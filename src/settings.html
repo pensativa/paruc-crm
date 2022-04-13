@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"Панель управления",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body class="crm">
+	@@include('components/page-blocks/_header.html')
+	@@include('components/page-blocks/_left-nav.html',{"settings":"active",})
+	<main class="main">
+        <h1 class="main__title">Настройки пользователя</h1>
+        <div class="setting">
+            <div class="setting__item">
+                <label for="name" class="setting__label">Имя</label>
+                <input id="name" type="text" class="input-crm" value="Kiev_Parus_Kovalenko">
+            </div>
+            <div class="setting__item">
+                <label for="email" class="setting__label">Почтовый адресс</label>
+                <input id="email" type="email" class="input-crm" value="lombardparus@gmail.com">
+            </div>
+            <div class="setting__item">
+                <label for="password" class="setting__label">Пароль</label>
+                <input id="password" type="text" class="input-crm" placeholder="Пароль">
+            </div>
+            <div class="setting__item">
+                <label for="again-password" class="setting__label">Подтвердить пароль</label>
+                <input id="again-password" type="text" class="input-crm" placeholder="Подтвердить пароль">
+            </div>
+        </div>
+        <div class="setting__btns">
+            <button class="btn">Отмена</button>
+            <button class="button">Сохранить профиль</button>
+        </div>
+		@@include('components/page-blocks/_footer.html')
+	</main>
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>
