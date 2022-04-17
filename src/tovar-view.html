@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"Панель управления",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body class="crm">
+	@@include('components/page-blocks/_header.html')
+	@@include('components/page-blocks/_left-nav.html',{"sections":"active","tovar":"active",})
+	<main class="main">
+        <h1 class="main__title">Товар</h1>
+        <div class="oder__view">
+            <table class="oder__view-table">
+                <tr>
+                    <td class="td-title">Активный</td>
+                    <td>
+                        <img src="img/check.svg" alt="no" width="20" height="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Название</td>
+                    <td>
+                        Серьги из белого золота с бриллиантами</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Артикул</td>
+                    <td>1242100056</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Цена</td>
+                    <td>5679.00</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Старая цена</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Количество</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Состояние</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Бренд</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Категория</td>
+                    <td>Серьги с бриллиантами</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Город</td>
+                    <td>Киев</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Склад</td>
+                    <td>PARUS_KOVALENKO</td>
+                </tr>
+                
+                <tr>
+                    <td class="td-title">Основное изображение</td>
+                    <td>
+                        <div class="tovar__img">
+                            <img src="img/img.svg" alt="Основное изображение" width="210" height="220">
+                            <a class="tovar__img-download" href="img/img.svg" download data-bs-toggle="tooltip" data-bs-placement="top" title="Скачать">
+                                <img src="img/dowload.svg" alt="" width="25"
+                                height="25">
+                            </a>
+                            <a href="img/img.svg" class="tovar__img-zoom" data-bs-toggle="tooltip" data-bs-placement="top" title="Увеличить">
+                                <img src="img/zoom.svg" alt="" width="25"
+                                height="25">
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Дополнительные изображения</td>
+                    <td>
+                        <div class="tovar__img">
+                            <img src="img/img.svg" alt="Основное изображение" width="210" height="220">
+                            <a class="tovar__img-download" href="img/img.svg" download data-bs-toggle="tooltip" data-bs-placement="top" title="Скачать">
+                                <img src="img/dowload.svg" alt="" width="25"
+                                height="25">
+                            </a>
+                            <a href="img/img.svg" class="tovar__img-zoom" data-bs-toggle="tooltip" data-bs-placement="top" title="Увеличить">
+                                <img src="img/zoom.svg" alt="" width="25"
+                                height="25">
+                            </a>
+                        </div>
+                        <div class="tovar__img">
+                            <img src="img/img.svg" alt="Основное изображение" width="210" height="220">
+                            <a class="tovar__img-download" href="img/img.svg" download data-bs-toggle="tooltip" data-bs-placement="top" title="Скачать">
+                                <img src="img/dowload.svg" alt="" width="25"
+                                height="25">
+                            </a>
+                            <a href="img/img.svg" class="tovar__img-zoom" data-bs-toggle="tooltip" data-bs-placement="top" title="Увеличить">
+                                <img src="img/zoom.svg" alt="" width="25"
+                                height="25">
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Описание</td>
+                    <td>
+                        <div class="tovar__disc">
+                            <button class="btn tovar__button-disc" type="button" data-bs-toggle="collapse" data-bs-target="#description" aria-expanded="false" aria-controls="description">
+                                Показать содержание
+                            </button>
+                            <div class="collapse" id="description">
+                            <div>
+                                <p>Состояние хорошее. Есть незначительные потертости.</p>
+                                <p>Характеристики :</p>
+                                <p>2 Кр-57 0,044 ct 4/5 А;</p>
+                                <p>2 Кр-57 0,036 ct 4/6 В;</p>
+                                <p>2 Кр-57 0,032 ct 4/5 А;</p>
+                            <p>24 Кр-57 0,<p>312 ct 4/5 А;</p>
+                                <p>2 Кр-57 0,016 ct 4/5 А.</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+		@@include('components/page-blocks/_footer.html')
+	</main>
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

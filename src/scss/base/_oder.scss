@@ -1,0 +1,139 @@
+.oder.section__block {
+    width: 1152px;
+}
+
+.oder__table {
+    width: 100%;
+}
+
+.oder__table .section__head {
+    display: table-row;
+    padding: 0;
+}
+
+.oder__table .section__head-item {
+    padding: 20px;
+    white-space: nowrap;
+
+    & span {
+        display: block;
+        font-weight: 300;
+        font-size: 12px;
+        color: #2C2B2B;
+        text-transform: initial;
+    }
+
+    &:nth-of-type(2) {
+        border-right: 5px solid rgba(112, 170, 239, 0.13);
+    }
+}
+
+.oder__table td {
+    padding: 20px;
+    border-bottom: 1px solid rgba(112, 170, 239, 0.31);
+
+    &:nth-of-type(2) {
+        border-right: 5px solid rgba(112, 170, 239, 0.13);
+    }
+}
+
+.nomber {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.title {
+    font-size: 14px;
+    color: #1D61B1;
+    width: 183px;
+}
+
+.small {
+    font-weight: 300;
+    font-size: 12px;
+}
+
+.date {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.status {
+    font-weight: 300;
+    font-size: 14px;
+    width: 170px;
+    padding-left: 20px;
+    position: relative;
+
+    &::before {
+        content: "";
+        width: 10px;
+        height: 10px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        vertical-align: middle;
+        border-radius: 2px;
+        margin-right: 10px;
+    }
+
+    &.gray::before {
+        background: #C4C4C4;
+    }
+
+    &.green::before {
+        background: #36D162;
+    }
+
+    &.red::before {
+        background: #C83138;
+    }
+
+    & ~ .small {
+        padding-left: 20px;
+    }
+}
+
+.price {
+    font-weight: 300;
+    font-size: 14px;
+}
+
+.sklad {
+    font-size: 14px;
+    color: #1D61B1;
+}
+
+.oder__view {
+    background: #FFFFFF;
+    border: 1px solid rgba(140, 190, 250, 0.35);
+    border-radius: 5px;
+    width: 1152px;
+    padding: 10px;
+    margin-bottom: 30px;
+}
+
+.oder__view-table {
+    width: 100%;
+    
+    & td {
+        padding: 10px 30px;
+    }
+
+    & tr:not(:last-of-type) td {
+        border-bottom: 1px solid rgba(112, 170, 239, 0.31);
+    }
+}
+
+.td-title {
+    color: #7E7E7E;
+    width: 300px;
+
+    & span {
+        color: $hover-color;
+    }
+}
+
+.table-select {
+    max-width: 461px;
+}

@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"Панель управления",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body class="crm">
+	@@include('components/page-blocks/_header.html')
+	@@include('components/page-blocks/_left-nav.html',{"oder":"active",})
+	<main class="main">
+        <h1 class="main__title">Заказы</h1>
+        <div class="section__block oder">
+            <div class="section__block-header">
+                <ul class="sections">
+                    <li>
+                        <a href="" class="sections__link active">ВСЕ ЗАКАЗЫ
+                            <span class="sections__count">160</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">НОВЫЙ ЗАКАЗ (ОЖИДАЕТ ОНЛАЙН ОПЛАТЫ)
+                            <span class="sections__count">3</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">НОВЫЙ ЗАКАЗ
+                            <span class="sections__count">3</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">В РАБОТЕ (В ОБРАБОТКЕ)
+                            <span class="sections__count">5</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">НЕТ ОТВЕТА
+                            <span class="sections__count">1</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">КЛИЕНТ ДУМАЕТ / ОТЛОЖЕНО
+                            <span class="sections__count">2</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">САМОВЫВОЗ
+                            <span class="sections__count">4</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">ОТПРАВЛЕН (ТТН)
+                            <span class="sections__count">4</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">ЗАКАЗ УСПЕШЕН
+                            <span class="sections__count">45</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">ЗАКАЗ ПРОВАЛЕН
+                            <span class="sections__count">37</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">ЗАКАЗ ПРОВАЛЕН ПО ВИНЕ ПОСТАВЩИКА
+                            <span class="sections__count">1</span></a>
+                    </li>
+                </ul>
+                <form class="section__header-search">
+                    <input class="input-crm" type="search" aria-label="Поиск" placeholder="поиск">
+                    <button class="btn header__search-btn" type="submit">
+                        <img src="img/search.svg" width="26" height="26" alt="Поиск">
+                    </button>
+                </form>
+                <button class="btn filter-btn dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilters" aria-expanded="false" aria-controls="filters">
+                    <img src="img/filter.svg" alt="Кол-во записей на странице" width="20" height="20">
+                </button>
+                <div class="collapse section__filters" id="collapseFilters">
+                    <div class="section__filters-item">
+                        <label for="date">ДАТА СОЗДАНИЯ ЗАКАЗА</label>
+                        <input id="date" type="date" class="input-crm" placeholder="Выберите дату">
+                    </div>
+                    <div class="section__filters-item">
+                        <label for="sklad">СКЛАД</label>
+                        <input id="sklad" type="text" class="input-crm" placeholder="Выберите склад">
+                    </div>
+                    <div class="section__filters-item">
+                        <label for="delivery">ТИП ДОСТАВКИ</label>
+                        <input id="delivery" type="text" class="input-crm" placeholder="Выберите тип доставки">
+                    </div>
+                    <button class="btn section__filters-reset">Сбрость фильтры</button>
+                </div>
+            </div>
+            <table class="oder__table">
+                <tr class="section__head">
+                    <th class="section__head-item"></th>
+                    <th class="section__head-item">НОМЕР</th>
+                    <th class="section__head-item">НАИМЕНОВАНИЕ ТОВАРА
+                        <span>Артикул</span>
+                    </th>
+                    <th class="section__head-item">СОЗДАН</th>
+                    <th class="section__head-item">СТАДИЯ СДЕЛКИ
+                        <span>Дата изменения</span>
+                    </th>
+                    <th class="section__head-item">СУММА, грн</th>
+                    <th class="section__head-item">СКЛАД</th>
+                </tr>
+                @@loop('components/bem-blocks/_oder-table.html', 'components/bem-blocks/_oder-table.json')
+            </table>
+            <div class="section__block-footer">
+                <nav class="section__pagination">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link page-link--sec" href="#" aria-label="First page">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link page-link--sec" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&lsaquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link  active" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link page-link--sec" href="#" aria-label="Next">
+                          <span aria-hidden="true">&rsaquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link page-link--sec" href="#" aria-label="Last page">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="section__counter">1 из 3</div>
+            </div>
+        </div>
+		@@include('components/page-blocks/_footer.html')
+	</main>
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

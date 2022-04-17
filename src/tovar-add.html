@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"Панель управления",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body class="crm">
+	@@include('components/page-blocks/_header.html')
+	@@include('components/page-blocks/_left-nav.html',{"sections":"active","tovar":"active",})
+	<main class="main">
+        <h2 class="main__title">Комментарий</h2>
+        <div class="oder__view">
+            <table class="oder__view-table">
+                <tr>
+                    <td class="td-title">Заголовок</td>
+                    <td>
+                        <input type="text" class="input-crm" placeholder="Заголовок">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Описание</td>
+                    <td>
+                        <textarea name="" id="" rows="5" class="input-crm" placeholder="Описание"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h1 class="main__title">Товар</h1>
+        <div class="oder__view">
+            <table class="oder__view-table">
+                <tr>
+                    <td class="td-title">Название<span>*</span></td>
+                    <td>
+                        <input type="text" class="input-crm" placeholder="Название">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Артикул<span>*</span></td>
+                    <td>
+                        <input type="text" class="input-crm" placeholder="Артикул">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Цена<span>*</span></td>
+                    <td>
+                        <input type="text" class="input-crm" placeholder="Цена">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Старая цена</td>
+                    <td>
+                        <input type="text" class="input-crm" placeholder="Старая цена">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Количество<span>*</span></td>
+                    <td>
+                        <input type="text" class="input-crm" placeholder="Количество ">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Категория<span>*</span></td>
+                    <td>
+                        <select name="" id="" class="input-crm">
+                            <option value="" selected disabled>Категория  </option>
+                            <option value="">option 1</option>
+                            <option value="">option 2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Город<span>*</span></td>
+                    <td>
+                        <select name="" id="" class="input-crm">
+                            <option value="" selected disabled>Город</option>
+                            <option value="">option 1</option>
+                            <option value="">option 2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Характеристики<span>*</span></td>
+                    <td>
+                        <input type="text" class="input-crm" placeholder="Выберите категорию чтобы увидеть характеристики">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Склад<span>*</span></td>
+                    <td>
+                        <select name="" id="" class="input-crm">
+                            <option value="" selected disabled>Выбрать склад</option>
+                            <option value="">option 1</option>
+                            <option value="">option 2</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr>
+                    <td class="td-title">Основное изображение</td>
+                    <td>
+                        <button class="button-outline">Добавить новое изображение</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Дополнительные изображения</td>
+                    <td>
+                        <button class="button-outline">Добавить новое изображение</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Описание</td>
+                    <td>
+                            <textarea name="" id="" rows="7" class="input-crm" placeholder="Описание">
+                        </textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="sclad__btns">
+            <button class="btn">Отмена</button>
+            <button class="button button--sec">Создать и продолжить</button>
+            <button class="button">Создать товар</button>
+        </div>
+	</main>
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

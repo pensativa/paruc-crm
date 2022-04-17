@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+@@include('components/page-blocks/_head.html',{
+"lang":"en",
+"title":"Панель управления",
+"description":"",
+"keywords":"",
+"favicon":"img/favicons/favicon",
+})
+
+<body class="crm">
+	@@include('components/page-blocks/_header.html')
+	@@include('components/page-blocks/_left-nav.html',{"sections":"active","sclad":"active",})
+	<main class="main">
+        <h1 class="main__title">Заказ 234500</h1>
+        <h2 class="main__subtitle">1. О заказе</h2>
+        <div class="oder__view">
+            <table class="oder__view-table">
+                <tr>
+                    <td class="td-title">Стадия заказа</td>
+                    <td>
+                        <select name="" id="" class="input-crm table-select">
+                            <option value="">Новый заказ (ожидает онлайн оплаты)</option>
+                            <option value="">Новый заказ</option>
+                            <option value="">В работе (в обработке)</option>
+                            <option value="">Нет ответа</option>
+                            <option value="">Клиент думает / Отложено</option>
+                            <option value="">Самовывоз</option>
+                            <option value="">Отправлен (ТТН)</option>
+                            <option value="">Заказ успешен</option>
+                            <option value="" >Заказ провален</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Номер заказа</td>
+                    <td>234500</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Наименование товара</td>
+                    <td>Кулон из желтого и белого золота с бриллиантами (26978847)</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Категория</td>
+                    <td>Подвесы декоративные (кулоны) [211]</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Артикул</td>
+                    <td>123499000</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Сумма заказа</td>
+                    <td>7890,00 грн.</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Процент размещения</td>
+                    <td>8%</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Дата создания</td>
+                    <td>2022-01-15 09:57:21</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Наименование склада с которого сделан заказ</td>
+                    <td>PARUS_KOVALENKO</td>
+                </tr>
+            </table>
+        </div>
+        <h2 class="main__subtitle">2. О клиенте</h2>
+        <div class="oder__view">
+            <table class="oder__view-table">
+                <tr>
+                    <td class="td-title">Имя</td>
+                    <td>
+                        Татьяна
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Фамилия</td>
+                    <td>Коваленко</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Отчество</td>
+                    <td>Николаевна</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Номер телефона</td>
+                    <td>+380995423766</td>
+                </tr>
+                <tr>
+                    <td class="td-title">E-mail</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="td-title">В черном списке?</td>
+                    <td>Не заполено</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Не перезванивать клиенту</td>
+                    <td>
+                        <img src="img/check.svg" alt="no" width="20" height="20">
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h2 class="main__subtitle">3. Доставка и оплата</h2>
+        <div class="oder__view">
+            <table class="oder__view-table">
+                <tr>
+                    <td class="td-title">Тип доставки</td>
+                    <td>
+                        <select name="" id="" class="input-crm table-select">
+                            <option value="">Самовывоз</option>
+                            <option value="">Новая почта</option>
+                            <option value="">Курьерская доставка</option>
+                            <option value="">Курьерская доставка Новая почта на ваш адресс</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">ТТН</td>
+                    <td>
+                        <input type="text" class="input-crm table-select">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Город</td>
+                    <td><input type="text" class="input-crm table-select" value="Киев"></td>
+                </tr>
+                <tr>
+                    <td class="td-title">Отделение</td>
+                    <td><input type="text" class="input-crm table-select" value="234"></td>
+                </tr>
+                <tr>
+                    <td class="td-title">Тип оплаты</td>
+                    <td>
+                        <select name="" id="" class="input-crm table-select">
+                        <option value="">Наложенный платеж</option>
+                        <option value="">Курьеру</option>
+                        <option value="">Online</option>
+                    </select>
+                </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Статус оплаты</td>
+                    <td><input type="text" class="input-crm table-select" value="-"></td>
+                </tr>
+            </table>
+        </div>
+        <h2 class="main__subtitle">4. Комментарии</h2>
+        <div class="oder__view">
+            <table class="oder__view-table">
+                <tr>
+                    <td class="td-title">Комментарий для поставщика</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Комментарий от поставщика</td>
+                    <td>
+                        <textarea rows="6" class="input-crm">с клиентом связались, нужны дополнительные фото и видео. Отправили</textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="sclad__btns">
+            <button class="btn">Отмена</button>
+            <button class="button button--sec">Сохранить</button>
+            <button class="button">Сохранить и закрыть</button>
+        </div>
+		@@include('components/page-blocks/_footer.html')
+	</main>
+	@@include('components/page-blocks/_scripts.html')
+</body>
+
+</html>

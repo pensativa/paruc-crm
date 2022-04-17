@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=1200, initial-scale=0, maximum-scale=5.0, user-scalable=1">
+	<meta name="description"
+				content="">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Панель управления</title>
+</head>
+
+
+<body class="crm">
+	<header class="header">
+    <div class="navbar">
+        <img src="img/logo.svg" alt="Ломбард Парус" width="154" height="57" class="header__logo">
+        <div class="header__search">
+            <form class="header__search-form">
+                <input class="input-crm" type="search" aria-label="Поиск">
+                <button class="btn header__search-btn" type="submit">
+                    <img src="img/search.svg" width="26" height="26" alt="Поиск">
+                </button>
+            </form>
+        </div>
+        <div class="header__exit">
+            <p class="header__exit-name">Kiev_Parus_Kovalenko</p>
+            <a href="index.html" class="header__exit-button" data-bs-toggle="tooltip" data-bs-placement="top" title="Выйти">
+                <img src="img/exit.svg" width="33" height="33" alt="Выйти">
+            </a>
+        </div>
+    </div>
+</header>
+
+	<div class="left-nav">
+    <ul class="nav menu flex-column">
+        <li class="menu-item">
+          <a class="menu-link menu-link--home @@home" aria-current="page" href="home.html">Панель управления</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link menu-link--sections active">Разделы</a>
+          <ul class="sub-menu">
+              <li class="sub-menu__item">
+                  <a href="sclad.html" class="sub-menu__link @@sclad">Склады</a>
+                </li>
+              <li class="sub-menu__item">
+                  <a href="tovar.html" class="sub-menu__link active">Товары</a>
+                </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link menu-link--oder @@oder" href="oder.html">Заказы</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-link menu-link--setting @@settings" href="settings.html">Настройки пользователя</a>
+          </li>
+        <li class="menu-item">
+            <a class="menu-link menu-link--ruls @@ruls" href="ruls.html">Правила использования личного кабинета</a>
+        </li>
+    </ul>
+</div>
+	<main class="main">
+        <h1 class="main__title">Товар</h1>
+        <div class="oder__view">
+            <table class="oder__view-table">
+                <tr>
+                    <td class="td-title">Активный</td>
+                    <td>
+                        <img src="img/check.svg" alt="no" width="20" height="20">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Название</td>
+                    <td>
+                        Серьги из белого золота с бриллиантами</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Артикул</td>
+                    <td>1242100056</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Цена</td>
+                    <td>5679.00</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Старая цена</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Количество</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Состояние</td>
+                    <td>1</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Бренд</td>
+                    <td>-</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Категория</td>
+                    <td>Серьги с бриллиантами</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Город</td>
+                    <td>Киев</td>
+                </tr>
+                <tr>
+                    <td class="td-title">Склад</td>
+                    <td>PARUS_KOVALENKO</td>
+                </tr>
+                
+                <tr>
+                    <td class="td-title">Основное изображение</td>
+                    <td>
+                        <div class="tovar__img">
+                            <img src="img/img.svg" alt="Основное изображение" width="210" height="220">
+                            <a class="tovar__img-download" href="img/img.svg" download data-bs-toggle="tooltip" data-bs-placement="top" title="Скачать">
+                                <img src="img/dowload.svg" alt="" width="25"
+                                height="25">
+                            </a>
+                            <a href="img/img.svg" class="tovar__img-zoom" data-bs-toggle="tooltip" data-bs-placement="top" title="Увеличить">
+                                <img src="img/zoom.svg" alt="" width="25"
+                                height="25">
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Дополнительные изображения</td>
+                    <td>
+                        <div class="tovar__img">
+                            <img src="img/img.svg" alt="Основное изображение" width="210" height="220">
+                            <a class="tovar__img-download" href="img/img.svg" download data-bs-toggle="tooltip" data-bs-placement="top" title="Скачать">
+                                <img src="img/dowload.svg" alt="" width="25"
+                                height="25">
+                            </a>
+                            <a href="img/img.svg" class="tovar__img-zoom" data-bs-toggle="tooltip" data-bs-placement="top" title="Увеличить">
+                                <img src="img/zoom.svg" alt="" width="25"
+                                height="25">
+                            </a>
+                        </div>
+                        <div class="tovar__img">
+                            <img src="img/img.svg" alt="Основное изображение" width="210" height="220">
+                            <a class="tovar__img-download" href="img/img.svg" download data-bs-toggle="tooltip" data-bs-placement="top" title="Скачать">
+                                <img src="img/dowload.svg" alt="" width="25"
+                                height="25">
+                            </a>
+                            <a href="img/img.svg" class="tovar__img-zoom" data-bs-toggle="tooltip" data-bs-placement="top" title="Увеличить">
+                                <img src="img/zoom.svg" alt="" width="25"
+                                height="25">
+                            </a>
+                        </div>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Описание</td>
+                    <td>
+                        <div class="tovar__disc">
+                            <button class="btn tovar__button-disc" type="button" data-bs-toggle="collapse" data-bs-target="#description" aria-expanded="false" aria-controls="description">
+                                Показать содержание
+                            </button>
+                            <div class="collapse" id="description">
+                            <div>
+                                <p>Состояние хорошее. Есть незначительные потертости.</p>
+                                <p>Характеристики :</p>
+                                <p>2 Кр-57 0,044 ct 4/5 А;</p>
+                                <p>2 Кр-57 0,036 ct 4/6 В;</p>
+                                <p>2 Кр-57 0,032 ct 4/5 А;</p>
+                            <p>24 Кр-57 0,<p>312 ct 4/5 А;</p>
+                                <p>2 Кр-57 0,016 ct 4/5 А.</p>
+                            </div>
+                        </div>
+                    </td>
+                </tr>
+            </table>
+        </div>
+		<div class="footer">
+    <a href="https://pensativa.github.io/parus/" class="footer__link" target="_blank">Ломбард “ПАРУС”</a>
+    <p class="footer__operator">&#8901;</p>
+    <p class="footer__copyrights">2022 Ломбард “ПАРУС”</p>
+</div>
+
+	</main>
+	<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

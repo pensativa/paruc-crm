@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=1200, initial-scale=0, maximum-scale=5.0, user-scalable=1">
+	<meta name="description"
+				content="">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Панель управления</title>
+</head>
+
+
+<body class="crm">
+	<header class="header">
+    <div class="navbar">
+        <img src="img/logo.svg" alt="Ломбард Парус" width="154" height="57" class="header__logo">
+        <div class="header__search">
+            <form class="header__search-form">
+                <input class="input-crm" type="search" aria-label="Поиск">
+                <button class="btn header__search-btn" type="submit">
+                    <img src="img/search.svg" width="26" height="26" alt="Поиск">
+                </button>
+            </form>
+        </div>
+        <div class="header__exit">
+            <p class="header__exit-name">Kiev_Parus_Kovalenko</p>
+            <a href="index.html" class="header__exit-button" data-bs-toggle="tooltip" data-bs-placement="top" title="Выйти">
+                <img src="img/exit.svg" width="33" height="33" alt="Выйти">
+            </a>
+        </div>
+    </div>
+</header>
+
+	<div class="left-nav">
+    <ul class="nav menu flex-column">
+        <li class="menu-item">
+          <a class="menu-link menu-link--home @@home" aria-current="page" href="home.html">Панель управления</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link menu-link--sections active">Разделы</a>
+          <ul class="sub-menu">
+              <li class="sub-menu__item">
+                  <a href="sclad.html" class="sub-menu__link @@sclad">Склады</a>
+                </li>
+              <li class="sub-menu__item">
+                  <a href="tovar.html" class="sub-menu__link active">Товары</a>
+                </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link menu-link--oder @@oder" href="oder.html">Заказы</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-link menu-link--setting @@settings" href="settings.html">Настройки пользователя</a>
+          </li>
+        <li class="menu-item">
+            <a class="menu-link menu-link--ruls @@ruls" href="ruls.html">Правила использования личного кабинета</a>
+        </li>
+    </ul>
+</div>
+	<main class="main">
+        <h2 class="main__title">Комментарий</h2>
+        <div class="oder__view">
+            <table class="oder__view-table">
+                <tr>
+                    <td class="td-title">Заголовок</td>
+                    <td>
+                        <input type="text" class="input-crm" placeholder="Заголовок">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Описание</td>
+                    <td>
+                        <textarea name="" id="" rows="5" class="input-crm" placeholder="Описание"></textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <h1 class="main__title">Товар</h1>
+        <div class="oder__view">
+            <table class="oder__view-table">
+                <tr>
+                    <td class="td-title">Название<span>*</span></td>
+                    <td>
+                        <input type="text" class="input-crm" value="Кулон из белого золота с  бриллиантами">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Артикул<span>*</span></td>
+                    <td>
+                        <input type="text" class="input-crm" value="2345550">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Цена<span>*</span></td>
+                    <td>
+                        <input type="text" class="input-crm" value="7703,00">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Старая цена</td>
+                    <td>
+                        <input type="text" class="input-crm" placeholder="Старая цена">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Количество<span>*</span></td>
+                    <td>
+                        <input type="text" class="input-crm" value="1">
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Категория<span>*</span></td>
+                    <td>
+                        <select name="" id="" class="input-crm">
+                            <option value="" selected>Подвесы с бриллиантами</option>
+                            <option value="">option 1</option>
+                            <option value="">option 2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Город<span>*</span></td>
+                    <td>
+                        <select name="" id="" class="input-crm">
+                            <option value="" selected>Киев </option>
+                            <option value="">option 1</option>
+                            <option value="">option 2</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr class="va-top">
+                    <td class="td-title">Характеристики<span>*</span></td>
+                    <td>
+                        <table class="tovar__haracters">
+                            <tr>
+                                <td class="td-title">Дефект</td>
+                                <td>
+                                    <div class="checkbox-crm">
+                                        <input id="defect" type="checkbox">
+                                        <label for="defect"></label>
+                                    </div>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-title">Цвет металла</td>
+                                <td>
+                                    <select name="" id="" class="input-crm">
+                                        <option value="" selected>Белое золото </option>
+                                        <option value="">option 1</option>
+                                        <option value="">option 2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-title">Гарантия</td>
+                                <td>
+                                    <select name="" id="" class="input-crm">
+                                        <option value="" selected>Нет</option>
+                                        <option value="">Да</option>
+                                        <option value="">option 2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-title">Цвет металла</td>
+                                <td>
+                                    <select name="" id="" class="input-crm">
+                                        <option value="" selected>Белое золото </option>
+                                        <option value="">option 1</option>
+                                        <option value="">option 2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-title">Цвет камня</td>
+                                <td>
+                                    <select name="" id="" class="input-crm">
+                                        <option value="" selected>Голубой</option>
+                                        <option value="">option 1</option>
+                                        <option value="">option 2</option>
+                                    </select>
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-title">Проба</td>
+                                <td>
+                                    <input type="text" class="input-crm" value="750">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-title">Диаметр камня, мм</td>
+                                <td>
+                                    <input type="text" class="input-crm" value="1,9 мм">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-title">Клеймо/именник</td>
+                                <td>
+                                    <input type="text" class="input-crm" value="">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-title">Размер, см</td>
+                                <td>
+                                    <input type="text" class="input-crm" value="2,1 см">
+                                </td>
+                            </tr>
+                            <tr>
+                                <td class="td-title">Вес</td>
+                                <td>
+                                    <input type="text" class="input-crm" value="2,20">
+                                </td>
+                            </tr>
+                        </table>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Склад<span>*</span></td>
+                    <td>
+                        <select name="" id="" class="input-crm">
+                            <option value="" selected>Kiev_Parus_Kovalenko</option>
+                            <option value="">option 1</option>
+                            <option value="">option 2</option>
+                        </select>
+                    </td>
+                </tr>
+                
+                <tr class="va-top">
+                    <td class="td-title">Основное изображение</td>
+                    <td>
+                        <div class="tovar__img">
+                            <img src="img/item.jpg" alt="Основное изображение" width="174" height="174">
+                            <a class="tovar__img-download" href="img/item.jpg" download data-bs-toggle="tooltip" data-bs-placement="top" title="Скачать">
+                                <img src="img/dowload.svg" alt="" width="25"
+                                height="25">
+                            </a>
+                            <a href="img/item.jpg" class="tovar__img-zoom" data-bs-toggle="tooltip" data-bs-placement="top" title="Увеличить">
+                                <img src="img/zoom.svg" alt="" width="25"
+                                height="25">
+                            </a>
+                            <button class="btn tovar__img-cut" data-bs-toggle="tooltip" data-bs-placement="top" title="Редактировать">
+                                <img src="img/cut.svg" alt="Редактировать" width="24" height="24">
+                            </button>
+                            <button class="btn tovar__img-delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Удалить">
+                                <img src="img/delete.svg" alt="Удалить" width="24" height="24">
+                            </button>
+                        </div>
+                        <button class="button-outline">Добавить новое изображение</button>
+                    </td>
+                </tr>
+                <tr class="va-top">
+                    <td class="td-title">Дополнительные изображения</td>
+                    <td>
+                        <div class="tovar__img">
+                            <img src="img/item.jpg" alt="Основное изображение" width="174" height="174">
+                            <a class="tovar__img-download" href="img/item.jpg" download data-bs-toggle="tooltip" data-bs-placement="top" title="Скачать">
+                                <img src="img/dowload.svg" alt="" width="25"
+                                height="25">
+                            </a>
+                            <a href="img/item.jpg" class="tovar__img-zoom" data-bs-toggle="tooltip" data-bs-placement="top" title="Увеличить">
+                                <img src="img/zoom.svg" alt="" width="25"
+                                height="25">
+                            </a>
+                            <button class="btn tovar__img-cut" data-bs-toggle="tooltip" data-bs-placement="top" title="Редактировать">
+                                <img src="img/cut.svg" alt="Редактировать" width="24" height="24">
+                            </button>
+                            <button class="btn tovar__img-delete" data-bs-toggle="tooltip" data-bs-placement="top" title="Удалить">
+                                <img src="img/delete.svg" alt="Удалить" width="24" height="24">
+                            </button>
+                        </div>
+                        <button class="button-outline">Добавить новое изображение</button>
+                    </td>
+                </tr>
+                <tr>
+                    <td class="td-title">Описание</td>
+                    <td>
+                            <textarea name="" id="" rows="7" class="input-crm">Состояние хорошее. Есть незначительные потертости. Характеристики : 3 Кр-57 0,117 сt 4/6 В; 31 Кр-57 0,155 ct 4/69 В; 17 Кр-57 0,085 ct 4/7 С;
+                        </textarea>
+                    </td>
+                </tr>
+            </table>
+        </div>
+        <div class="sclad__btns">
+            <button class="btn">Отмена</button>
+            <button class="button button--sec">Обновить и продолжить</button>
+            <button class="button">Обновить товар</button>
+        </div>
+	</main>
+	<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>

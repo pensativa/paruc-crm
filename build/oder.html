@@ -1,0 +1,509 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport"
+				content="width=1200, initial-scale=0, maximum-scale=5.0, user-scalable=1">
+	<meta name="description"
+				content="">
+	<meta name="keywords"
+				content="">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.svg"
+				type="image/svg+xml">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.webp"
+				type="image/webp">
+	<link rel="shortcut icon"
+				href="img/favicons/favicon.png"
+				type="image/x-icon">
+	<link rel="stylesheet"
+				href="css/libs.min.css">
+	<link rel="stylesheet"
+				href="css/style.min.css">
+	<title>Панель управления</title>
+</head>
+
+
+<body class="crm">
+	<header class="header">
+    <div class="navbar">
+        <img src="img/logo.svg" alt="Ломбард Парус" width="154" height="57" class="header__logo">
+        <div class="header__search">
+            <form class="header__search-form">
+                <input class="input-crm" type="search" aria-label="Поиск">
+                <button class="btn header__search-btn" type="submit">
+                    <img src="img/search.svg" width="26" height="26" alt="Поиск">
+                </button>
+            </form>
+        </div>
+        <div class="header__exit">
+            <p class="header__exit-name">Kiev_Parus_Kovalenko</p>
+            <a href="index.html" class="header__exit-button" data-bs-toggle="tooltip" data-bs-placement="top" title="Выйти">
+                <img src="img/exit.svg" width="33" height="33" alt="Выйти">
+            </a>
+        </div>
+    </div>
+</header>
+
+	<div class="left-nav">
+    <ul class="nav menu flex-column">
+        <li class="menu-item">
+          <a class="menu-link menu-link--home @@home" aria-current="page" href="home.html">Панель управления</a>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link menu-link--sections @@sections">Разделы</a>
+          <ul class="sub-menu">
+              <li class="sub-menu__item">
+                  <a href="sclad.html" class="sub-menu__link @@sclad">Склады</a>
+                </li>
+              <li class="sub-menu__item">
+                  <a href="tovar.html" class="sub-menu__link @@tovar">Товары</a>
+                </li>
+          </ul>
+        </li>
+        <li class="menu-item">
+          <a class="menu-link menu-link--oder active" href="oder.html">Заказы</a>
+        </li>
+        <li class="menu-item">
+            <a class="menu-link menu-link--setting @@settings" href="settings.html">Настройки пользователя</a>
+          </li>
+        <li class="menu-item">
+            <a class="menu-link menu-link--ruls @@ruls" href="ruls.html">Правила использования личного кабинета</a>
+        </li>
+    </ul>
+</div>
+	<main class="main">
+        <h1 class="main__title">Заказы</h1>
+        <div class="section__block oder">
+            <div class="section__block-header">
+                <ul class="sections">
+                    <li>
+                        <a href="" class="sections__link active">ВСЕ ЗАКАЗЫ
+                            <span class="sections__count">160</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">НОВЫЙ ЗАКАЗ (ОЖИДАЕТ ОНЛАЙН ОПЛАТЫ)
+                            <span class="sections__count">3</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">НОВЫЙ ЗАКАЗ
+                            <span class="sections__count">3</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">В РАБОТЕ (В ОБРАБОТКЕ)
+                            <span class="sections__count">5</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">НЕТ ОТВЕТА
+                            <span class="sections__count">1</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">КЛИЕНТ ДУМАЕТ / ОТЛОЖЕНО
+                            <span class="sections__count">2</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">САМОВЫВОЗ
+                            <span class="sections__count">4</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">ОТПРАВЛЕН (ТТН)
+                            <span class="sections__count">4</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">ЗАКАЗ УСПЕШЕН
+                            <span class="sections__count">45</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">ЗАКАЗ ПРОВАЛЕН
+                            <span class="sections__count">37</span></a>
+                    </li>
+                    <li>
+                        <a href="" class="sections__link">ЗАКАЗ ПРОВАЛЕН ПО ВИНЕ ПОСТАВЩИКА
+                            <span class="sections__count">1</span></a>
+                    </li>
+                </ul>
+                <form class="section__header-search">
+                    <input class="input-crm" type="search" aria-label="Поиск" placeholder="поиск">
+                    <button class="btn header__search-btn" type="submit">
+                        <img src="img/search.svg" width="26" height="26" alt="Поиск">
+                    </button>
+                </form>
+                <button class="btn filter-btn dropdown-toggle" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFilters" aria-expanded="false" aria-controls="filters">
+                    <img src="img/filter.svg" alt="Кол-во записей на странице" width="20" height="20">
+                </button>
+                <div class="collapse section__filters" id="collapseFilters">
+                    <div class="section__filters-item">
+                        <label for="date">ДАТА СОЗДАНИЯ ЗАКАЗА</label>
+                        <input id="date" type="date" class="input-crm" placeholder="Выберите дату">
+                    </div>
+                    <div class="section__filters-item">
+                        <label for="sklad">СКЛАД</label>
+                        <input id="sklad" type="text" class="input-crm" placeholder="Выберите склад">
+                    </div>
+                    <div class="section__filters-item">
+                        <label for="delivery">ТИП ДОСТАВКИ</label>
+                        <input id="delivery" type="text" class="input-crm" placeholder="Выберите тип доставки">
+                    </div>
+                    <button class="btn section__filters-reset">Сбрость фильтры</button>
+                </div>
+            </div>
+            <table class="oder__table">
+                <tr class="section__head">
+                    <th class="section__head-item"></th>
+                    <th class="section__head-item">НОМЕР</th>
+                    <th class="section__head-item">НАИМЕНОВАНИЕ ТОВАРА
+                        <span>Артикул</span>
+                    </th>
+                    <th class="section__head-item">СОЗДАН</th>
+                    <th class="section__head-item">СТАДИЯ СДЕЛКИ
+                        <span>Дата изменения</span>
+                    </th>
+                    <th class="section__head-item">СУММА, грн</th>
+                    <th class="section__head-item">СКЛАД</th>
+                </tr>
+                    <tr>
+        <td>
+            <a href="oder-view.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Смотреть">
+                <img src="img/eye.svg" alt="Смотреть" width="20" height="20" class="oder__look">
+            </a>
+        </td>
+        <td>
+            <p class="nomber">012345679</p>
+        </td>
+        <td>
+            <h3 class="title">Купон из белого золота с бриллиантом (34500088)</h3>
+            <p class="small">120045005678</p>
+        </td>
+        <td>
+            <p class="date">2022-01-13 21:12:18</p>
+        </td>
+        <td>
+            <p class="status gray">В работе (В обработке)</p>
+            <p class="small">c 2022-01-14 11:04:11</p>
+        </td>
+        <td>
+            <p class="price">8057.70</p>
+        </td>
+        <td>
+            <p class="sklad">PARUS_KOVALENKO</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="oder-view.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Смотреть">
+                <img src="img/eye.svg" alt="Смотреть" width="20" height="20" class="oder__look">
+            </a>
+        </td>
+        <td>
+            <p class="nomber">012345679</p>
+        </td>
+        <td>
+            <h3 class="title">Купон из белого золота с бриллиантом (34500088)</h3>
+            <p class="small">120045005678</p>
+        </td>
+        <td>
+            <p class="date">2022-01-13 21:12:18</p>
+        </td>
+        <td>
+            <p class="status gray">Отправлен (ТТН)</p>
+            <p class="small">c 2022-01-14 11:04:11</p>
+        </td>
+        <td>
+            <p class="price">8057.70</p>
+        </td>
+        <td>
+            <p class="sklad">PARUS_KOVALENKO</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="oder-view.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Смотреть">
+                <img src="img/eye.svg" alt="Смотреть" width="20" height="20" class="oder__look">
+            </a>
+        </td>
+        <td>
+            <p class="nomber">012345679</p>
+        </td>
+        <td>
+            <h3 class="title">Купон из белого золота с бриллиантом (34500088)</h3>
+            <p class="small">120045005678</p>
+        </td>
+        <td>
+            <p class="date">2022-01-13 21:12:18</p>
+        </td>
+        <td>
+            <p class="status red">Заказ провален</p>
+            <p class="small">c 2022-01-14 11:04:11</p>
+        </td>
+        <td>
+            <p class="price">8057.70</p>
+        </td>
+        <td>
+            <p class="sklad">PARUS_KOVALENKO</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="oder-view.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Смотреть">
+                <img src="img/eye.svg" alt="Смотреть" width="20" height="20" class="oder__look">
+            </a>
+        </td>
+        <td>
+            <p class="nomber">012345679</p>
+        </td>
+        <td>
+            <h3 class="title">Купон из белого золота с бриллиантом (34500088)</h3>
+            <p class="small">120045005678</p>
+        </td>
+        <td>
+            <p class="date">2022-01-13 21:12:18</p>
+        </td>
+        <td>
+            <p class="status green">Заказ успешен</p>
+            <p class="small">c 2022-01-14 11:04:11</p>
+        </td>
+        <td>
+            <p class="price">8057.70</p>
+        </td>
+        <td>
+            <p class="sklad">PARUS_KOVALENKO</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="oder-view.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Смотреть">
+                <img src="img/eye.svg" alt="Смотреть" width="20" height="20" class="oder__look">
+            </a>
+        </td>
+        <td>
+            <p class="nomber">012345679</p>
+        </td>
+        <td>
+            <h3 class="title">Купон из белого золота с бриллиантом (34500088)</h3>
+            <p class="small">120045005678</p>
+        </td>
+        <td>
+            <p class="date">2022-01-13 21:12:18</p>
+        </td>
+        <td>
+            <p class="status red">Заказ провален по вине поставщика</p>
+            <p class="small">c 2022-01-14 11:04:11</p>
+        </td>
+        <td>
+            <p class="price">8057.70</p>
+        </td>
+        <td>
+            <p class="sklad">PARUS_KOVALENKO</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="oder-view.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Смотреть">
+                <img src="img/eye.svg" alt="Смотреть" width="20" height="20" class="oder__look">
+            </a>
+        </td>
+        <td>
+            <p class="nomber">012345679</p>
+        </td>
+        <td>
+            <h3 class="title">Купон из белого золота с бриллиантом (34500088)</h3>
+            <p class="small">120045005678</p>
+        </td>
+        <td>
+            <p class="date">2022-01-13 21:12:18</p>
+        </td>
+        <td>
+            <p class="status red">Заказ провален</p>
+            <p class="small">c 2022-01-14 11:04:11</p>
+        </td>
+        <td>
+            <p class="price">8057.70</p>
+        </td>
+        <td>
+            <p class="sklad">PARUS_KOVALENKO</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="oder-view.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Смотреть">
+                <img src="img/eye.svg" alt="Смотреть" width="20" height="20" class="oder__look">
+            </a>
+        </td>
+        <td>
+            <p class="nomber">012345679</p>
+        </td>
+        <td>
+            <h3 class="title">Купон из белого золота с бриллиантом (34500088)</h3>
+            <p class="small">120045005678</p>
+        </td>
+        <td>
+            <p class="date">2022-01-13 21:12:18</p>
+        </td>
+        <td>
+            <p class="status red">Заказ провален</p>
+            <p class="small">c 2022-01-14 11:04:11</p>
+        </td>
+        <td>
+            <p class="price">8057.70</p>
+        </td>
+        <td>
+            <p class="sklad">PARUS_KOVALENKO</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="oder-view.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Смотреть">
+                <img src="img/eye.svg" alt="Смотреть" width="20" height="20" class="oder__look">
+            </a>
+        </td>
+        <td>
+            <p class="nomber">012345679</p>
+        </td>
+        <td>
+            <h3 class="title">Купон из белого золота с бриллиантом (34500088)</h3>
+            <p class="small">120045005678</p>
+        </td>
+        <td>
+            <p class="date">2022-01-13 21:12:18</p>
+        </td>
+        <td>
+            <p class="status red">Заказ провален</p>
+            <p class="small">c 2022-01-14 11:04:11</p>
+        </td>
+        <td>
+            <p class="price">8057.70</p>
+        </td>
+        <td>
+            <p class="sklad">PARUS_KOVALENKO</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="oder-view.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Смотреть">
+                <img src="img/eye.svg" alt="Смотреть" width="20" height="20" class="oder__look">
+            </a>
+        </td>
+        <td>
+            <p class="nomber">012345679</p>
+        </td>
+        <td>
+            <h3 class="title">Купон из белого золота с бриллиантом (34500088)</h3>
+            <p class="small">120045005678</p>
+        </td>
+        <td>
+            <p class="date">2022-01-13 21:12:18</p>
+        </td>
+        <td>
+            <p class="status green">Заказ успешен</p>
+            <p class="small">c 2022-01-14 11:04:11</p>
+        </td>
+        <td>
+            <p class="price">8057.70</p>
+        </td>
+        <td>
+            <p class="sklad">PARUS_KOVALENKO</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="oder-view.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Смотреть">
+                <img src="img/eye.svg" alt="Смотреть" width="20" height="20" class="oder__look">
+            </a>
+        </td>
+        <td>
+            <p class="nomber">012345679</p>
+        </td>
+        <td>
+            <h3 class="title">Купон из белого золота с бриллиантом (34500088)</h3>
+            <p class="small">120045005678</p>
+        </td>
+        <td>
+            <p class="date">2022-01-13 21:12:18</p>
+        </td>
+        <td>
+            <p class="status green">Заказ успешен</p>
+            <p class="small">c 2022-01-14 11:04:11</p>
+        </td>
+        <td>
+            <p class="price">8057.70</p>
+        </td>
+        <td>
+            <p class="sklad">PARUS_KOVALENKO</p>
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <a href="oder-view.html" data-bs-toggle="tooltip" data-bs-placement="top" title="Смотреть">
+                <img src="img/eye.svg" alt="Смотреть" width="20" height="20" class="oder__look">
+            </a>
+        </td>
+        <td>
+            <p class="nomber">012345679</p>
+        </td>
+        <td>
+            <h3 class="title">Купон из белого золота с бриллиантом (34500088)</h3>
+            <p class="small">120045005678</p>
+        </td>
+        <td>
+            <p class="date">2022-01-13 21:12:18</p>
+        </td>
+        <td>
+            <p class="status green">Заказ успешен</p>
+            <p class="small">c 2022-01-14 11:04:11</p>
+        </td>
+        <td>
+            <p class="price">8057.70</p>
+        </td>
+        <td>
+            <p class="sklad">PARUS_KOVALENKO</p>
+        </td>
+    </tr>
+
+            </table>
+            <div class="section__block-footer">
+                <nav class="section__pagination">
+                    <ul class="pagination">
+                      <li class="page-item">
+                        <a class="page-link page-link--sec" href="#" aria-label="First page">
+                            <span aria-hidden="true">&laquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link page-link--sec" href="#" aria-label="Previous">
+                          <span aria-hidden="true">&lsaquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item"><a class="page-link  active" href="#">1</a></li>
+                      <li class="page-item"><a class="page-link" href="#">2</a></li>
+                      <li class="page-item"><a class="page-link" href="#">3</a></li>
+                      <li class="page-item">
+                        <a class="page-link page-link--sec" href="#" aria-label="Next">
+                          <span aria-hidden="true">&rsaquo;</span>
+                        </a>
+                      </li>
+                      <li class="page-item">
+                        <a class="page-link page-link--sec" href="#" aria-label="Last page">
+                          <span aria-hidden="true">&raquo;</span>
+                        </a>
+                      </li>
+                    </ul>
+                  </nav>
+                  <div class="section__counter">1 из 3</div>
+            </div>
+        </div>
+		<div class="footer">
+    <a href="https://pensativa.github.io/parus/" class="footer__link" target="_blank">Ломбард “ПАРУС”</a>
+    <p class="footer__operator">&#8901;</p>
+    <p class="footer__copyrights">2022 Ломбард “ПАРУС”</p>
+</div>
+
+	</main>
+	<script src="js/popper.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/main.min.js"></script>
+
+</body>
+
+</html>
